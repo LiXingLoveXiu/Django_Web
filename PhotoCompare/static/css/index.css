@@ -1,0 +1,29 @@
+.border{
+    border-radius: 25px;
+}
+
+.shadow{
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.outside{
+    text-align: center;
+}
+
+.left{
+
+}
+
+.right{
+}
+
+.img{
+    max-width: 35%;
+    height: auto;
+    /*height: 500px;
+    width: 700px;*/
+}
+
+.img:hover{
+   border: 1px solid;
+}

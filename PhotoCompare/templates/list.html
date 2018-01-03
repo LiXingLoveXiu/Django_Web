@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>our photos</title>
+</head>
+<link href="/static/css/list.css" rel="stylesheet" type="text/css"/>
+<body>
+{% for photo in photolist %}
+<div class="polaroid">
+    <img src="/upload/{{photo.content}}" class="img" >
+    <div class="container">被喜欢次数：{{photo.favorNum}}</div>
+</div>
+{% endfor %}
+</body>
+</html>
+

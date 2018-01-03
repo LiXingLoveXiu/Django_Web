@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>what's your favor</title>
+</head>
+<link href="static/css/index.css" rel="stylesheet" type="text/css"/>
+<body>
+<div class="outside">
+    <p>双击选择你喜欢的照片</p>
+</div>
+<form action="/photo/chooseFavor" method="post">
+    {% csrf_token %}
+    <input type="hidden" id="favorPhoto" value="" name="favorPhoto"/>
+    <div class="outside">
+        <img src="upload/{{src1}}" class="img left border" id="{{id1}}" ondblclick="choose(this.id)">
+        <img src="upload/{{src2}}" class="img right border" id="{{id2}}" onclick="choose(this.id)">
+    </div>
+</form>
+</body>
+</html>
+<script src="static/js/index.js"></script>
